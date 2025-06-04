@@ -13,7 +13,9 @@ const Header = () => {
   const navItems = [
     { name: 'Dashboard', path: '/dashboard' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Calendar', path: '/calendar' },
+    { name: 'Build Agents', path: '/build-agents' },
+    { name: 'Templates', path: '/clone-template' },
+    { name: 'SDK Setup', path: '/sdk-setup' },
     { name: 'Docs', path: '/docs' },
   ];
 
@@ -32,12 +34,12 @@ const Header = () => {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-1">
+        <nav className="hidden lg:flex items-center space-x-1">
           {navItems.map((item) => (
             <Link 
               key={item.name}
               to={item.path}
-              className={`relative px-4 py-2 rounded-lg transition-all duration-300 hover:bg-blue-50 dark:hover:bg-blue-950/50 group ${
+              className={`relative px-3 py-2 rounded-lg transition-all duration-300 hover:bg-blue-50 dark:hover:bg-blue-950/50 group text-sm ${
                 isActive(item.path) 
                   ? 'text-blue-600 bg-blue-50 dark:bg-blue-950/50 shadow-sm' 
                   : 'text-muted-foreground hover:text-foreground'
@@ -78,7 +80,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden hover:bg-blue-50 dark:hover:bg-blue-950/50 transition-all duration-300"
+            className="lg:hidden hover:bg-blue-50 dark:hover:bg-blue-950/50 transition-all duration-300"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -91,7 +93,7 @@ const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden border-t bg-background/95 backdrop-blur">
+        <div className="lg:hidden border-t bg-background/95 backdrop-blur">
           <nav className="flex flex-col space-y-1 p-4">
             {navItems.map((item) => (
               <Link 

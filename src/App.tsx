@@ -11,6 +11,9 @@ import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
 import Calendar from "./pages/Calendar";
 import Docs from "./pages/Docs";
+import BuildAgents from "./pages/BuildAgents";
+import CloneTemplate from "./pages/CloneTemplate";
+import SDKSetup from "./pages/SDKSetup";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +33,9 @@ const App = () => (
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/docs" element={<Docs />} />
+                <Route path="/build-agents" element={<BuildAgents />} />
+                <Route path="/clone-template" element={<CloneTemplate />} />
+                <Route path="/sdk-setup" element={<SDKSetup />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
