@@ -14,9 +14,11 @@ const Header = () => {
     { name: 'Dashboard', path: '/dashboard' },
     { name: 'Projects', path: '/projects' },
     { name: 'Build Agents', path: '/build-agents' },
-    { name: 'Templates', path: '/clone-template' },
-    { name: 'SDK Setup', path: '/sdk-setup' },
-    { name: 'Docs', path: '/docs' },
+    { name: 'Bounties', path: '/bounties' },
+    { name: 'Payroll', path: '/payroll' },
+    { name: 'Invoices', path: '/invoices' },
+    { name: 'Revenue Share', path: '/revenue-share' },
+    { name: 'Calendar', path: '/calendar' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

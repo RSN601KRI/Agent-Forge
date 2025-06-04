@@ -10,10 +10,12 @@ import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
 import Calendar from "./pages/Calendar";
-import Docs from "./pages/Docs";
 import BuildAgents from "./pages/BuildAgents";
 import CloneTemplate from "./pages/CloneTemplate";
-import SDKSetup from "./pages/SDKSetup";
+import Bounties from "./pages/Bounties";
+import Payroll from "./pages/Payroll";
+import Invoices from "./pages/Invoices";
+import RevenueShare from "./pages/RevenueShare";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,10 +34,12 @@ const App = () => (
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/calendar" element={<Calendar />} />
-                <Route path="/docs" element={<Docs />} />
                 <Route path="/build-agents" element={<BuildAgents />} />
                 <Route path="/clone-template" element={<CloneTemplate />} />
-                <Route path="/sdk-setup" element={<SDKSetup />} />
+                <Route path="/bounties" element={<Bounties />} />
+                <Route path="/payroll" element={<Payroll />} />
+                <Route path="/invoices" element={<Invoices />} />
+                <Route path="/revenue-share" element={<RevenueShare />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
