@@ -1,73 +1,92 @@
-# Welcome to your Lovable project
+# AgentForge 🧠⚡️
 
-## Project info
+![Screenshot (24)](https://github.com/user-attachments/assets/3d6fc01f-cfbe-4032-96e2-35b9e62f9e7e)
 
-**URL**: https://lovable.dev/projects/b391e298-9b1d-467a-bb39-d5a394c236ac
+**AgentForge** is a platform to build **autonomous AI agents** that revolutionize intelligent commerce automation — from helping customers shop via AI-driven chat, to automating complex payment workflows, affiliate systems, and payroll. Powered by the **Payman AI SDK**, AgentForge lets developers rapidly deploy, test, and scale financial agent capabilities with real transaction support.
 
-## How can I edit this code?
+> 🚀 “Build agents that think, transact, and scale commerce experiences.”
 
-There are several ways of editing your application.
+## 🌟 Key Features
 
-**Use Lovable**
+![Screenshot (28)](https://github.com/user-attachments/assets/23f08c61-ea7c-46a2-b6b4-5c57731dbe9c)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b391e298-9b1d-467a-bb39-d5a394c236ac) and start prompting.
+### 💰 Bounties
+- Create and manage development bounties
+- Automate funding and task tracking via AI agents
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🧾 Invoices
+- Automatically generate and process invoices
+- Trigger payment events based on task completion
 
-**Use your preferred IDE**
+### 🧑‍💼 Payroll
+- Process salaries autonomously using smart contracts
+- Schedule and execute payroll operations using Payman SDK
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 📈 Revenue Share
+- Auto-distribute profits based on contribution metrics
+- Ensure transparent and programmable revenue logic for teams
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 📅 Calendar
+- Agent-based scheduling for meetings, payouts, and task reviews
+- Integrated task timelines and automations
 
-Follow these steps:
+## 🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Frontend:** Vite + React + TypeScript
+- **UI Components:** ShadCN/UI
+- **Styling:** TailwindCSS
+- **State Management:** Built-in React state, extendable via context/Redux
+- **Deployment:** Vercel
+- **SDK Integration:** Payman AI Wallet SDK
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🧠 Wildcard Agent Toolkit Use Cases
 
-# Step 3: Install the necessary dependencies.
-npm i
+With full access to the Payman SDK, agents can:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+- 🔁 **Trigger invoice payments**
+- 📤 **Fund bounties**
+- 👥 **Run payroll**
+- 💸 **Refund failed transactions**
+- 📊 **Split revenue with collaborators**
+
+These agents reside within a smart agent management interface featuring a rich UI and programmable backend logic, powered by Web3-friendly infrastructure.
+
+## 🚀 Get Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/RSN601KRI/payman-ai-orchestrator.git
+cd payman-ai-orchestrator
+````
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run Locally
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### 4. Deploy Your Agent
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Click the **Deploy Agent** button from the dashboard UI to test and deploy your autonomous agents.
 
-**Use GitHub Codespaces**
+## 📄 Documentation
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+* [View Docs](https://agentforge-eta.vercel.app/docs)
+* [Try Payman SDK](https://agentforge-eta.vercel.app/)
 
-## What technologies are used for this project?
+## 🤝 Contributing
 
-This project is built with:
+We're actively seeking contributors to expand agent capabilities and explore new use cases. Feel free to fork the repo, explore the SDK, and submit pull requests!
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📜 License
 
-## How can I deploy this project?
+This project is licensed under the MIT License.
 
-Simply open [Lovable](https://lovable.dev/projects/b391e298-9b1d-467a-bb39-d5a394c236ac) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+![Screenshot (29)](https://github.com/user-attachments/assets/35cc16fe-d855-4a95-90f0-b59f7c614942)
