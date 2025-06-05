@@ -10,60 +10,60 @@ const Docs = () => {
       title: "Getting Started",
       icon: Rocket,
       items: [
-        { name: "Quick Start Guide", url: "https://docs.payman.dev/quick-start", type: "guide" },
-        { name: "Installation", url: "https://docs.payman.dev/installation", type: "guide" },
-        { name: "Your First Agent", url: "https://docs.payman.dev/first-agent", type: "tutorial" }
+        { name: "Introduction", url: "https://docs.paymanai.com/overview/introduction", type: "guide" },
+        { name: "Quick Start", url: "https://docs.paymanai.com/developer/payman-sdk", type: "guide" },
+        { name: "Setup & Installation", url: "https://docs.paymanai.com/developer/payman-sdk", type: "tutorial" }
       ]
     },
     {
-      title: "SDK Reference",
+      title: "Payman AI SDK",
       icon: Code,
       items: [
-        { name: "JavaScript SDK", url: "https://docs.payman.dev/sdk/javascript", type: "reference" },
-        { name: "Python SDK", url: "https://docs.payman.dev/sdk/python", type: "reference" },
-        { name: "REST API", url: "https://docs.payman.dev/api", type: "reference" }
+        { name: "SDK Documentation", url: "https://docs.paymanai.com/developer/payman-sdk", type: "reference" },
+        { name: "API Reference", url: "https://docs.paymanai.com/developer/payman-sdk", type: "reference" },
+        { name: "Code Examples", url: "https://docs.paymanai.com/developer/payman-sdk", type: "reference" }
       ]
     },
     {
       title: "AI Agents",
       icon: Bot,
       items: [
-        { name: "Building Shopping Agents", url: "https://docs.payman.dev/agents/shopping", type: "guide" },
-        { name: "Payment Automation", url: "https://docs.payman.dev/agents/payments", type: "guide" },
-        { name: "Inventory Management", url: "https://docs.payman.dev/agents/inventory", type: "guide" }
+        { name: "Building Shopping Agents", url: "https://docs.paymanai.com/overview/introduction", type: "guide" },
+        { name: "Payment Automation", url: "https://docs.paymanai.com/developer/payman-sdk", type: "guide" },
+        { name: "Agent Workflows", url: "https://docs.paymanai.com/overview/introduction", type: "guide" }
       ]
     },
     {
-      title: "Security & Compliance",
+      title: "Security & Payments",
       icon: Shield,
       items: [
-        { name: "Security Best Practices", url: "https://docs.payman.dev/security", type: "guide" },
-        { name: "Wallet Management", url: "https://docs.payman.dev/wallets", type: "guide" },
-        { name: "Audit Trails", url: "https://docs.payman.dev/auditing", type: "reference" }
+        { name: "Security Overview", url: "https://docs.paymanai.com/overview/introduction", type: "guide" },
+        { name: "Payment Processing", url: "https://docs.paymanai.com/developer/payman-sdk", type: "guide" },
+        { name: "Compliance", url: "https://docs.paymanai.com/overview/introduction", type: "reference" }
       ]
     }
   ];
 
   const quickLinks = [
     {
-      title: "Try Payman SDK",
-      description: "Get started with our SDK in minutes",
+      title: "Payman AI SDK",
+      description: "Get started with the official Payman AI SDK",
       icon: Zap,
-      url: "https://sdk.payman.dev",
+      url: "https://docs.paymanai.com/developer/payman-sdk",
       color: "blue"
     },
     {
-      title: "API Documentation",
-      description: "Complete API reference and examples",
+      title: "Introduction Guide",
+      description: "Complete overview and getting started guide",
       icon: Book,
-      url: "https://api.payman.dev",
+      url: "https://docs.paymanai.com/overview/introduction",
       color: "green"
     },
     {
       title: "Payment Integration",
-      description: "USDC/USD payment processing guide",
+      description: "AI-powered payment processing integration",
       icon: DollarSign,
-      url: "https://docs.payman.dev/payments",
+      url: "https://docs.paymanai.com/developer/payman-sdk",
       color: "purple"
     }
   ];
@@ -83,7 +83,7 @@ const Docs = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Documentation</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to build autonomous AI agents that can think and transact
+            Everything you need to build autonomous AI agents with Payman AI SDK
           </p>
         </div>
 
@@ -159,9 +159,9 @@ const Docs = () => {
         {/* SDK Call-to-Action */}
         <Card className="mt-12 bg-gradient-to-r from-blue-600 to-purple-600 border-0 text-white">
           <CardContent className="p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">Ready to Build with Payman?</h3>
+            <h3 className="text-2xl font-bold mb-4">Ready to Build with Payman AI?</h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Start building autonomous AI agents today. Our SDK makes it easy to integrate 
+              Start building autonomous AI agents today. The Payman AI SDK makes it easy to integrate 
               AI-powered commerce capabilities into your applications.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -169,17 +169,17 @@ const Docs = () => {
                 size="lg" 
                 variant="secondary" 
                 className="group"
-                onClick={() => window.open('https://sdk.payman.dev', '_blank')}
+                onClick={() => window.open('https://docs.paymanai.com/developer/payman-sdk', '_blank')}
               >
                 <Code className="mr-2 h-4 w-4" />
-                Try Payman SDK
+                Try Payman AI SDK
                 <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
                 className="bg-transparent border-white text-white hover:bg-white hover:text-blue-600"
-                onClick={() => window.open('https://docs.payman.dev', '_blank')}
+                onClick={() => window.open('https://docs.paymanai.com/overview/introduction', '_blank')}
               >
                 View Full Documentation
               </Button>

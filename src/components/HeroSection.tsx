@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div className="mb-6">
           <span className="inline-flex items-center gap-2 text-emerald-600 font-semibold text-sm uppercase tracking-wide bg-emerald-50 dark:bg-emerald-950/50 px-4 py-2 rounded-full border border-emerald-200 dark:border-emerald-800 hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300">
             <Sparkles className="h-4 w-4 animate-pulse" />
-            Autonomous AI Agents That Think, Pay & Execute
+            Powered by Payman AI SDK
           </span>
         </div>
         
@@ -30,17 +30,17 @@ const HeroSection = () => {
         <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
           Deploy autonomous AI agents that revolutionize commerce through intelligent conversations, 
           automate complex payment workflows, manage affiliate systems, and handle sophisticated 
-          try-before-you-buy experiences. Where artificial intelligence meets financial innovation.
+          try-before-you-buy experiences. Powered by Payman AI's cutting-edge SDK.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             size="lg" 
             className="group relative overflow-hidden bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 hover:from-purple-600 hover:to-emerald-600 text-lg px-8 py-6 hover:shadow-xl hover:shadow-emerald-500/25 transition-all duration-300 hover:scale-105"
-            onClick={() => window.location.href = '/build-agents'}
+            onClick={() => window.open('https://docs.paymanai.com/developer/payman-sdk', '_blank')}
           >
             <Zap className="mr-2 h-5 w-5 group-hover:animate-spin" />
-            Deploy Your First Agent
+            Try Payman AI SDK
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
             <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-12"></div>
           </Button>
@@ -48,10 +48,10 @@ const HeroSection = () => {
             variant="outline" 
             size="lg" 
             className="group text-lg px-8 py-6 border-2 hover:bg-emerald-50 hover:border-emerald-300 dark:hover:bg-emerald-950/50 hover:shadow-lg transition-all duration-300 hover:scale-105"
-            onClick={() => window.location.href = '/clone-template'}
+            onClick={() => window.open('https://docs.paymanai.com/overview/introduction', '_blank')}
           >
             <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-            Clone Agent Template
+            View Documentation
           </Button>
         </div>
       </div>

@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -17,6 +16,7 @@ import Payroll from "./pages/Payroll";
 import Invoices from "./pages/Invoices";
 import RevenueShare from "./pages/RevenueShare";
 import NotFound from "./pages/NotFound";
+import Docs from "./pages/Docs";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +40,7 @@ const App = () => (
                 <Route path="/payroll" element={<Payroll />} />
                 <Route path="/invoices" element={<Invoices />} />
                 <Route path="/revenue-share" element={<RevenueShare />} />
+                <Route path="/docs" element={<Docs />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>

@@ -28,7 +28,7 @@ const CTASection = () => {
             
             <p className="text-xl text-emerald-100 mb-10 max-w-3xl mx-auto leading-relaxed">
               Join thousands of developers who are already building autonomous AI agents 
-              that can think, transact, and transform the way business gets done.
+              that can think, transact, and transform the way business gets done with Payman AI.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -36,10 +36,10 @@ const CTASection = () => {
                 size="lg" 
                 variant="secondary" 
                 className="group relative overflow-hidden text-lg px-8 py-6 bg-white text-emerald-600 hover:bg-gray-100 hover:shadow-xl transition-all duration-300 hover:scale-105"
-                onClick={() => window.location.href = '/sdk-setup'}
+                onClick={() => window.open('https://docs.paymanai.com/developer/payman-sdk', '_blank')}
               >
                 <Code className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-                Try AgentForge SDKs
+                Try Payman AI SDK
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-emerald-50 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-12"></div>
               </Button>
@@ -47,7 +47,7 @@ const CTASection = () => {
                 size="lg" 
                 variant="outline" 
                 className="text-lg px-8 py-6 bg-transparent border-2 border-white text-white hover:bg-white hover:text-emerald-600 hover:shadow-xl transition-all duration-300 hover:scale-105 group"
-                onClick={() => window.open('https://docs.agentforge.dev', '_blank')}
+                onClick={() => window.open('https://docs.paymanai.com/overview/introduction', '_blank')}
               >
                 <ExternalLink className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
                 View Documentation
