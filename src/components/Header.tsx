@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Menu, X, Sparkles, Zap } from 'lucide-react';
+import { Moon, Sun, Menu, X, Bot, Zap } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ const Header = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-3 group">
           <div className="relative w-10 h-10 bg-gradient-to-br from-emerald-500 via-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:shadow-emerald-500/25 transition-all duration-300 group-hover:scale-105">
-            <span className="text-white font-bold text-lg group-hover:animate-pulse">A</span>
+            <Bot className="h-6 w-6 text-white animate-pulse group-hover:animate-bounce transition-all duration-300" />
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 to-blue-400 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </div>
           <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent group-hover:from-purple-600 group-hover:to-emerald-600 transition-all duration-300">
