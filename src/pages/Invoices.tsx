@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -8,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Invoice, Plus, Calendar, DollarSign, Clock, CheckCircle, AlertCircle } from 'lucide-react';
+import { FileText, Plus, Calendar, DollarSign, Clock, CheckCircle, AlertCircle } from 'lucide-react';
 
 const Invoices = () => {
   const [invoices, setInvoices] = useState([
@@ -172,7 +171,7 @@ const Invoices = () => {
                   className="w-full bg-gradient-to-r from-emerald-600 to-blue-600"
                   disabled={!newInvoice.clientName || !newInvoice.description}
                 >
-                  <Invoice className="mr-2 h-4 w-4" />
+                  <FileText className="mr-2 h-4 w-4" />
                   Create Invoice
                 </Button>
               </div>
@@ -188,7 +187,7 @@ const Invoices = () => {
                 <CardHeader>
                   <div className="flex items-start justify-between mb-4">
                     <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
-                      <Invoice className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                      <FileText className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div className="flex flex-col items-end gap-2">
                       <Badge variant="outline" className={`${getStatusColor(invoice.status)} text-white border-0`}>
